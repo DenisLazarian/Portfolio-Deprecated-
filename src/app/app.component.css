@@ -1,0 +1,35 @@
+.sm-font{
+    font-size: 12px;
+}
+
+.item-nav-link:hover{
+    background-color: #ca7df1;
+    color: #000;
+}
+
+.item-nav-link{
+    /* padding: 20px; */
+}
+
+.footer-item-nav{
+    color: white;
+}
+
+.footer-item-nav:hover{
+    text-decoration: underline;
+    background-color: #fcf7ff;
+    color:#000;
+
+}
+
+.fondo-home{
+    background-color: #2d3951;
+    min-height: 460px;
+}
+
+.footer-container{
+    background-color: #181f2d;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
