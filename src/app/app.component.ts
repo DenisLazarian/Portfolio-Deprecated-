@@ -18,8 +18,9 @@ export class AppComponent  {
     // this.debugItem(id);
     
     if(id == this.navbarSelectedOption){
-      document.getElementById(id)?.classList.add('bg-white');
-      document.getElementById(id)?.classList.add('text-muted');
+      // document.getElementById(id)?.classList.add('bg-white');
+      // document.getElementById(id)?.classList.add('text-muted');
+      document.getElementById(id)?.classList.add('selected');
 
       this.removeStyleStatusSelection(classItem);
     }
@@ -32,8 +33,9 @@ export class AppComponent  {
     for (let index = 0; index < classItems.length; index++) {
       let element = classItems[index];
       if(element.id != this.navbarSelectedOption){
-        element.classList.remove('bg-white');
-        element.classList.remove('text-muted');
+        // element.classList.remove('bg-white');
+        // element.classList.remove('text-muted');
+        element.classList.remove('selected');
       }
     }
     

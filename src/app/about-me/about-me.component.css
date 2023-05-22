@@ -47,3 +47,14 @@
 .cont-boton-download{
     margin-top: 60px;
 }
+
+.lang-item{
+    background-color: #2d3951;
+    color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    /* box-shadow: 0px 0px 5px #41d9ff;
+    border: 1px solid #ccc; */
+    color: #fff;
+    font-size: 12px;
+}

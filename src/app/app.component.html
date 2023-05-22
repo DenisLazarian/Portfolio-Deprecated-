@@ -7,29 +7,29 @@
            <h4>Portafolio</h4>
         </a>
 
-        <ul class="nav col-12 col-lg-10 me-lg-auto mb-2 text-lg-end justify-content-center  justify-content-lg-end mb-md-0 rounded  gap-3">
+        <ul class="nav col-12 col-lg-10 me-lg-auto mb-2 text-lg-end justify-content-center  justify-content-lg-end mb-md-0   gap-3">
             <li>
-                <a id="home" (click)="navbarSelectedOption = 'home'; selectedOptionStyleStatus('home')" href="#" class="text-muted bg-white nav-link  item-nav-link  px-1 sm-font text-white rounded">
+                <a id="home" (click)="navbarSelectedOption = 'home'; selectedOptionStyleStatus('home')" href="#" class=" nav-link selected  item-nav-link  px-1 sm-font text-white ">
                     <i class="bi bi-house"></i> Inicio
                 </a>
             </li>
             <li>
-                <a id="aboutMe" (click)="navbarSelectedOption = 'aboutMe'; selectedOptionStyleStatus('aboutMe')" href="#" class="nav-link item-nav-link  px-1 sm-font text-white rounded">
+                <a id="aboutMe" (click)="navbarSelectedOption = 'aboutMe'; selectedOptionStyleStatus('aboutMe')" href="#" class="nav-link item-nav-link  px-1 sm-font text-white ">
                     <i class="bi bi-file-earmark-person"></i> Sobre mi
                 </a>
             </li>
             <li>
-                <a id="projects" (click)="navbarSelectedOption = 'projects'; selectedOptionStyleStatus('projects')" href="#" class="nav-link  item-nav-link px-1 sm-font text-white rounded">
+                <a id="projects" (click)="navbarSelectedOption = 'projects'; selectedOptionStyleStatus('projects')" href="#" class="nav-link  item-nav-link px-1 sm-font text-white ">
                     <i class="bi bi-code-slash"></i> Proyectos
                 </a>
             </li>
             <li>
-                <a id="work" (click)="navbarSelectedOption = 'work'; selectedOptionStyleStatus('work')" href="#" class="nav-link px-1  item-nav-link sm-font text-white rounded">
+                <a id="work" (click)="navbarSelectedOption = 'work'; selectedOptionStyleStatus('work')" href="#" class="nav-link px-1  item-nav-link sm-font text-white ">
                     <i class="bi bi-person-workspace"></i> Trabajo
                 </a>
             </li>
             <li>
-                <a id="contact" (click)="navbarSelectedOption = 'contact'; selectedOptionStyleStatus('contact')" href="#" class="nav-link item-nav-link  px-1 sm-font text-white rounded">
+                <a id="contact" (click)="navbarSelectedOption = 'contact'; selectedOptionStyleStatus('contact')" href="#" class="nav-link item-nav-link  px-1 sm-font text-white ">
                     <i class="bi bi-person-lines-fill"></i> Contacto
                 </a>
             </li>
@@ -51,13 +51,13 @@
         <app-about-me></app-about-me>
     </div>
     <div *ngIf="navbarSelectedOption=='home'">
-        <app-home class=" d-flex justify-content-center fondo-home  " ></app-home>
+        <app-home class="d-flex justify-content-center fondo-home"></app-home>
     </div>
     <div *ngIf="navbarSelectedOption=='projects'">
         <app-projects></app-projects>
     </div>
     <div *ngIf="navbarSelectedOption=='work'">
-        <app-work></app-work>
+        <app-work class=""></app-work>
     </div>
     <div *ngIf="navbarSelectedOption=='contact'">
         <app-contact></app-contact>

@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutMeComponent implements OnInit {
 
+  pdfURL:string = 'assets/CV-Estandarizado.pdf';
+
   constructor() { }
 
   ngOnInit(): void {

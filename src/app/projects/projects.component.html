@@ -1,1 +1,40 @@
-<p>projects works!</p>
+<!-- <p>projects works!</p> -->
+
+<div class="main-projects">
+    <div class="container">
+        <div class="cont-project">
+            
+            <h1>
+                Proyectos
+            </h1>
+
+            <p class="lead">
+                Aqui encontraras algunos de mis proyectos personales y de trabajo.
+            </p>
+
+            <div class="d-flex gap-5 d-inline-block flex-wrap mt-5 justify-content-center" >
+
+                <div *ngFor="let project of projects; let i = index">
+                    <div class="card container-personalized" style="width: 15rem;">
+                        <div class="img-card position-relative">
+                            <img src={{project.image}} class="card-img-top img-fluid" class="imagen" alt="...">
+                            <div class="action">
+                                <a href={{project.url_host}} class="select-button-options  " title="Abrir en web"><i class="bi bi-database-fill"></i></a>
+                                <a href={{project.utl_github}} class="select-button-options  " title="Ver proyecto en Github"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body description-card">
+                            <h5>{{project.title}}</h5>
+                            <p class="card-text">{{project.description}}</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                
+            </div>
+        </div>
+    </div>
+</div>
