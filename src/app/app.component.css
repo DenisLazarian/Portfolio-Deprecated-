@@ -1,9 +1,15 @@
+:root {
+    --main-bg-color: #181f2d;
+    --head-button-selection: #004374;
+}
+
+
 .sm-font{
     font-size: 12px;
 }
 
 .item-nav-link:hover{
-    background-color: #ca7df1;
+    background-color: #004374;
     color: #000;
 }
 
