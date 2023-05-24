@@ -11,7 +11,9 @@ export class AppComponent  {
 
   navbarSelectedOption = 'home';
 
+  ngOnInit(): void {
   
+  }
 
   selectedOptionStyleStatus(id: string): void{
     let classItem = 'item-nav-link';
@@ -41,7 +43,7 @@ export class AppComponent  {
     
   }
 
-
+ 
 
   debugItem(item: string): void{
     console.log(item);

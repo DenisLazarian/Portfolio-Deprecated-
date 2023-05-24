@@ -20,3 +20,26 @@
     padding: 20px;
     
 }
+
+
+.link-contact{
+    color: #fff;
+    text-decoration: none;
+    margin-top: 90px;
+}
+
+
+
+.link-contact:hover{
+    text-decoration: underline;
+}
+
+.logo-link{
+    padding:11px; 
+    background-color: #2d3951;
+
+}
+
+.container{
+min-height: 75vh;
+}

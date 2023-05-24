@@ -17,12 +17,11 @@ export class WorkComponent implements OnInit {
   }
 
   timeLine = [
-    { subtitle:"titutlo1", title: '2019', detail: 'Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.'},
-    { subtitle:null  , title: '2018', detail: 'Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.' },
-    { subtitle:"titutlo3", title: '2017', detail: 'Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.'},
-    { subtitle:"titutlo4", title: '2016', detail: 'Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.'},
-    { subtitle:"titutlo5", title: '2015', detail: 'Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.' },
-    { subtitle:"titutlo5", title: '2015', detail: 'Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.' },
+    
+    { subtitle:"Prácticas en empresa (modalidad DUAL)", title: '2022-2023', detail: 'Al mismo tiempo que he estado estudiando, también he realizado las prácticas de empresa en modalidad DUAL (duración de 1000 horas) en la empresa "Ecityclic" de Semic, donde he aprendido las formas de trabajar en una empresa, y he podido poner en practica mis conocimientos he estado adquiriendo en el ciclo formativo.'},
+    { subtitle:"Ciclo formativo grado superior (2nd Curso)", title: '2022-2023', detail: 'En este año me he introducido en el apartado mas profesional del codigo web en general. En este año he empezado a programar a nivel de frontend y backend, dessarrolandome a mi mismo, mediante practicas y ejecicios, obteniendo experiéncia con los lenguajes Javascript i PHP, junto con sus frameworks, Angular y Codeigniter 4 respectivamente.'},
+    { subtitle:"Ciclo formativo grado superior (1er Curso)", title: '2021-2022', detail: 'En ese año me matriculé y estudié el primer curso de DAW (Dessarrollo de Aplicaciones web), donde he empezado a introducir i entender el arte de la programación en general. En este año he empezado mi ruta en la programación, con el lenguaje JAVA como primer lenguaje.' },
+    { subtitle:"Bachillerato", title: '2019-2021', detail: 'Fui estudiante de bachillerato en la modalidad Científico-Tecnològico, en el Insituto la Mitjana en pardiñas (Lleida-Cataluña España).' },
     
   ];
 
@@ -35,7 +34,7 @@ export class WorkComponent implements OnInit {
       datasets:[{
         axis: 'y',
         // label: 'My first Dataset',
-        data: [45, 70, 85, 63, 30, 86],
+        data: [65, 70, 85, 63, 30, 86],
         fill: false,
         // label: false,
         
@@ -80,14 +79,23 @@ export class WorkComponent implements OnInit {
                   label += ': ';
                 }
                 if (context.parsed.y !== null) {
-                  label += " "+context.parsed.y + ' %';
+                  label += "";
                 }
                 return label;
               }
             }
+          },
+          
+
+
+        },
+        scales:{
+          y:{
+            display: false,
           }
         }
-      }
+      },
+      
 
     });
   }

@@ -1,92 +1,92 @@
-<header class="p-3 bg-dark text-white">
-    <div class="container">
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start ">
-        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none gap-3">
-          <!-- <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg> -->
-          <i class="bi bi-code-square fs-2"></i>
-           <h4>Portafolio</h4>
-        </a>
-
-        <ul class="nav col-12 col-lg-10 me-lg-auto mb-2 text-lg-end justify-content-center  justify-content-lg-end mb-md-0   gap-3">
-            <li>
-                <a id="home" (click)="navbarSelectedOption = 'home'; selectedOptionStyleStatus('home')" href="#" class=" nav-link selected  item-nav-link  px-1 sm-font text-white ">
-                    <i class="bi bi-house"></i> Inicio
-                </a>
-            </li>
-            <li>
-                <a id="aboutMe" (click)="navbarSelectedOption = 'aboutMe'; selectedOptionStyleStatus('aboutMe')" href="#" class="nav-link item-nav-link  px-1 sm-font text-white ">
-                    <i class="bi bi-file-earmark-person"></i> Sobre mi
-                </a>
-            </li>
-            <li>
-                <a id="projects" (click)="navbarSelectedOption = 'projects'; selectedOptionStyleStatus('projects')" href="#" class="nav-link  item-nav-link px-1 sm-font text-white ">
-                    <i class="bi bi-code-slash"></i> Proyectos
-                </a>
-            </li>
-            <li>
-                <a id="work" (click)="navbarSelectedOption = 'work'; selectedOptionStyleStatus('work')" href="#" class="nav-link px-1  item-nav-link sm-font text-white ">
-                    <i class="bi bi-person-workspace"></i> Trabajo
-                </a>
-            </li>
-            <li>
-                <a id="contact" (click)="navbarSelectedOption = 'contact'; selectedOptionStyleStatus('contact')" href="#" class="nav-link item-nav-link  px-1 sm-font text-white ">
-                    <i class="bi bi-person-lines-fill"></i> Contacto
-                </a>
-            </li>
-        </ul>
-
-       
-      </div>
-    </div>
-  </header>
-
-  <main class="">
-    <!-- <div class=" m-5 m-5 rounded text-center">
-      <h1>Portafolio</h1>
-      <p class="lead">Este es mi portafolio</p>
-      <a class="btn btn-lg btn-primary" href="../../components/navbar/" role="button">View navbar docs &raquo;</a>
-    </div> -->
-
-    <div *ngIf="navbarSelectedOption=='aboutMe'">
-        <app-about-me></app-about-me>
-    </div>
-    <div *ngIf="navbarSelectedOption=='home'">
-        <app-home class="d-flex justify-content-center fondo-home"></app-home>
-    </div>
-    <div *ngIf="navbarSelectedOption=='projects'">
-        <app-projects></app-projects>
-    </div>
-    <div *ngIf="navbarSelectedOption=='work'">
-        <app-work class=""></app-work>
-    </div>
-    <div *ngIf="navbarSelectedOption=='contact'">
-        <app-contact></app-contact>
-    </div>
-  </main>
-
-    <div class=" footer-container">
-        <div class="container  ">
-            <footer class="mt-0 mb-0 mb- d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top ">
-                <p class="col-md-4 mb-0 text-muted sm-font">&copy; <span id="year">{{fullYear}}</span> All rights reserved. Created by Denis Emanuel Lazarian. <br>
-                Made with <strong> 
-                    Angular
-                </strong> 
-            </p>
-        
-            <!-- <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-            </a> -->
-        
-            <ul class="nav col-md-4 justify-content-end ">
-                <li class="nav-item"><a (click)=" navbarSelectedOption = 'home'; selectedOptionStyleStatus('home');" href="#" class="footer-item-nav sm-font rounded nav-link px-2 ">Inicio</a></li>
-                <li class="nav-item"><a (click)=" navbarSelectedOption = 'aboutMe'; selectedOptionStyleStatus('aboutMe');" href="#" class="footer-item-nav sm-font rounded nav-link px-2 ">Sobre mi</a></li>
-                <li class="nav-item"><a (click)=" navbarSelectedOption = 'projects'; selectedOptionStyleStatus('projects');" href="#" class="footer-item-nav rounded sm-font nav-link px-2 ">Proyectos</a></li>
-                <li class="nav-item"><a (click)=" navbarSelectedOption = 'work'; selectedOptionStyleStatus('work');" href="#" class="footer-item-nav sm-font rounded nav-link px-2 ">Trabajo</a></li>
-                <li class="nav-item"><a (click)=" navbarSelectedOption = 'contact'; selectedOptionStyleStatus('contact');" href="#" class="footer-item-nav sm-font rounded nav-link px-2 ">Contacto</a></li>
+    <header class="p-3 bg-dark text-white">
+        <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start ">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none gap-3">
+            <!-- <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg> -->
+            <i class="bi bi-code-square fs-2"></i>
+            <h4>Portafolio</h4>
+            </a>
+    
+            <ul class="nav col-12 col-lg-10 me-lg-auto mb-2 text-lg-end justify-content-center  justify-content-lg-end mb-md-0   gap-3">
+                <li>
+                    <a id="home" (click)="navbarSelectedOption = 'home'; selectedOptionStyleStatus('home')" href="#" class=" nav-link selected  item-nav-link  px-1 sm-font text-white ">
+                        <i class="bi bi-house"></i> Inicio
+                    </a>
+                </li>
+                <li>
+                    <a id="aboutMe" (click)="navbarSelectedOption = 'aboutMe'; selectedOptionStyleStatus('aboutMe')" href="#" class="nav-link item-nav-link  px-1 sm-font text-white ">
+                        <i class="bi bi-file-earmark-person"></i> Sobre mi
+                    </a>
+                </li>
+                <li>
+                    <a id="projects" (click)="navbarSelectedOption = 'projects'; selectedOptionStyleStatus('projects')" href="#" class="nav-link  item-nav-link px-1 sm-font text-white ">
+                        <i class="bi bi-code-slash"></i> Proyectos
+                    </a>
+                </li>
+                <li>
+                    <a id="work" (click)="navbarSelectedOption = 'work'; selectedOptionStyleStatus('work')" href="#" class="nav-link px-1  item-nav-link sm-font text-white ">
+                        <i class="bi bi-person-workspace"></i> Trabajo
+                    </a>
+                </li>
+                <li>
+                    <a id="contact" (click)="navbarSelectedOption = 'contact'; selectedOptionStyleStatus('contact')" href="#" class="nav-link item-nav-link  px-1 sm-font text-white ">
+                        <i class="bi bi-person-lines-fill"></i> Contacto
+                    </a>
+                </li>
             </ul>
+    
         
-        
-            </footer>
         </div>
-
-    </div>
+        </div>
+    </header>
+    
+    <main class="" id="main">
+        <!-- <div class=" m-5 m-5 rounded text-center">
+        <h1>Portafolio</h1>
+        <p class="lead">Este es mi portafolio</p>
+        <a class="btn btn-lg btn-primary" href="../../components/navbar/" role="button">View navbar docs &raquo;</a>
+        </div> -->
+    
+        <div *ngIf="navbarSelectedOption=='aboutMe'">
+            <app-about-me id="cont"></app-about-me>
+        </div>
+        <div *ngIf="navbarSelectedOption=='home'">
+            <app-home id="cont" class="d-flex justify-content-center fondo-home"></app-home>
+        </div>
+        <div *ngIf="navbarSelectedOption=='projects'">
+            <app-projects id="cont"></app-projects>
+        </div>
+        <div *ngIf="navbarSelectedOption=='work'">
+            <app-work id="cont" class=""></app-work>
+        </div>
+        <div *ngIf="navbarSelectedOption=='contact'">
+            <app-contact id="cont"></app-contact>
+        </div>
+    </main>
+    
+        <div class=" footer-container " id="foot">
+            <div class="container  ">
+                <footer class="mt-0 mb-0 mb- d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top ">
+                    <p class="col-md-4 mb-0 text-muted sm-font">&copy; <span id="year">{{fullYear}}</span> All rights reserved. Created by Denis Emanuel Lazarian. <br>
+                    Made with <strong> 
+                        Angular
+                    </strong> 
+                </p>
+            
+                <!-- <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+                </a> -->
+            
+                <ul class="nav col-md-4 justify-content-end ">
+                    <li class="nav-item"><a (click)=" navbarSelectedOption = 'home'; selectedOptionStyleStatus('home');" href="#" class="footer-item-nav sm-font rounded nav-link px-2 ">Inicio</a></li>
+                    <li class="nav-item"><a (click)=" navbarSelectedOption = 'aboutMe'; selectedOptionStyleStatus('aboutMe');" href="#" class="footer-item-nav sm-font rounded nav-link px-2 ">Sobre mi</a></li>
+                    <li class="nav-item"><a (click)=" navbarSelectedOption = 'projects'; selectedOptionStyleStatus('projects');" href="#" class="footer-item-nav rounded sm-font nav-link px-2 ">Proyectos</a></li>
+                    <li class="nav-item"><a (click)=" navbarSelectedOption = 'work'; selectedOptionStyleStatus('work');" href="#" class="footer-item-nav sm-font rounded nav-link px-2 ">Trabajo</a></li>
+                    <li class="nav-item"><a (click)=" navbarSelectedOption = 'contact'; selectedOptionStyleStatus('contact');" href="#" class="footer-item-nav sm-font rounded nav-link px-2 ">Contacto</a></li>
+                </ul>
+            
+            
+                </footer>
+            </div>
+    
+        </div>

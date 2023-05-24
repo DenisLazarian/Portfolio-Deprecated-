@@ -21,4 +21,6 @@
     display:inline-block
 }
 
-
+.elementoMargin{
+    min-height: 75vh;
+}
