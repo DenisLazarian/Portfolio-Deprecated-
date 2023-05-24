@@ -58,9 +58,6 @@ export class WorkComponent implements OnInit {
       }]
     }
 
-
-
-    console.log("createChart");
     this.chart = new Chart('skillsCharts', {
       type: 'bar', //this denotes tha type of chart
 

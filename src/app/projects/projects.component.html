@@ -13,15 +13,15 @@
             </p>
             <hr>
 
-            <!-- <div class="input-group">
-                <span class="input-group-text  border-1 border-white bg bg-dark" id="basic-addon1" ><i class=" bi bi-search text-white"></i></span>
-                <input type="text" class="form-control  text-white" placeholder="Busqueda por lenguaje: PHP, Javascript..." style="background-color: #2d3951;">
-            </div> -->
+            <div class="input-group">
+                <span class="input-group-text   bg bg-dark" id="basic-addon1" ><i class=" bi bi-search text-white"></i></span>
+                <input (input)="searchProject()" id="search" type="text" class="form-control  text-white" placeholder="Busqueda por etiquetas: PHP, Javascript..." style="background-color: #2d3951;">
+            </div>
 
-            <div class="d-flex gap-5 d-inline-block flex-wrap mt-5 justify-content-center" >
+            <div class="d-flex gap-5 d-inline-block  flex-wrap mt-5 justify-content-center" >
 
-                <div *ngFor="let project of projects; let i = index">
-                    <div class="card container-personalized" style="width: 15rem;">
+                <div *ngFor="let project of projectsSearched; let i = index">
+                    <div class="card container-personalized " style="width: 15rem;">
                         <div class="img-card position-relative">
                             <img src={{project.image}} class="card-img-top img-fluid" class="imagen" alt="...">
                             <div class="action">
@@ -32,14 +32,15 @@
                         <div class="card-body description-card">
                             <h5>{{project.title}}</h5>
                             <p class="card-text">{{project.description}}</p>
+
+                            <div class="d-flex flex-wrap gap-2 tags-list ">
+                                <div *ngFor="let tag of project.lang_tags; let y = index" >
+                                    <div class="tags-languajes unstyled">{{tag}}</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
                 </div>
-
-
-
-                
             </div>
         </div>
     </div>
