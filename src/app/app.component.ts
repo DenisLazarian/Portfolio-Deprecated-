@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -11,9 +12,21 @@ export class AppComponent  {
 
   navbarSelectedOption = 'home';
 
-  ngOnInit(): void {
-  
-  }
+  constructor(private _router:Router) { }
+
+
+  // ngAfterContentInit(): void {
+  //   this._router.events.subscribe(
+  //     (event: any) => {
+  //         if(event instanceof NavigationEnd ) {
+  //           this.enlargeMainScreen();
+
+  //         }
+  //     }
+  //   );
+  // }
+
+ 
 
   selectedOptionStyleStatus(id: string): void{
     let classItem = 'item-nav-link';
@@ -44,6 +57,17 @@ export class AppComponent  {
   }
 
  
+  enlargeMainScreen():void{
+
+    let heightScreen = window.innerHeight;
+
+    let mainScreen = document.getElementById('cont')?.offsetHeight;
+    let footerScreen = document.getElementById('foot')?.offsetHeight;
+    let headScreen = document.getElementById('head')?.offsetHeight;
+
+    console.log(heightScreen+" "+ headScreen+" " +mainScreen+" "+footerScreen);
+
+  }
 
   debugItem(item: string): void{
     console.log(item);

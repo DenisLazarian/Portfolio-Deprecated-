@@ -63,6 +63,10 @@
     opacity: 1;
   }
 
+  /* .img-card{
+    min-height: 21.5vh;
+  } */
+
 
   .select-button-options{
     background-color: #215acd;
@@ -87,7 +91,17 @@
 
 }
 
-/* .tags-list{
-  position: absolute;
-  bottom:0;
-} */
+.notFoundClass{
+  color: #fcff9e;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 40px;
+
+  
+
+  background-color: #51550afa;
+
+
+}
