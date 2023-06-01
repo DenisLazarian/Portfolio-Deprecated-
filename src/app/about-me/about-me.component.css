@@ -4,6 +4,7 @@
     color: #fff;
     padding: 20px;
     /* text-align: center; */
+    /* min-height: 100vh; */
 }
 
 .cont-inicio{
@@ -60,5 +61,7 @@
 }
 
 .elementoMargin{
-    min-height: 30vh;
+    /* min-height: 30vh; */
 }
+
+

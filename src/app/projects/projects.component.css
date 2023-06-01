@@ -99,9 +99,19 @@
   margin-bottom: 20px;
   padding: 40px;
 
-  
-
   background-color: #51550afa;
+}
+
+.main-projects{
+  /* min-height: 100vh; */
+}
 
 
+.icon-search{
+  background-color: #10151d;
+}
+
+.imagen{
+  min-height: 150px;
+  max-height: 150px;
 }

@@ -22,5 +22,10 @@
 }
 
 .elementoMargin{
-    min-height: 75vh;
+    /* min-height: 100vh; */
 }
+
+.cont{
+    height: 0;
+}
+

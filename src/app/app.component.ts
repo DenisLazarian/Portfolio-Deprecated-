@@ -15,18 +15,6 @@ export class AppComponent  {
   constructor(private _router:Router) { }
 
 
-  // ngAfterContentInit(): void {
-  //   this._router.events.subscribe(
-  //     (event: any) => {
-  //         if(event instanceof NavigationEnd ) {
-  //           this.enlargeMainScreen();
-
-  //         }
-  //     }
-  //   );
-  // }
-
- 
 
   selectedOptionStyleStatus(id: string): void{
     let classItem = 'item-nav-link';
@@ -71,5 +59,10 @@ export class AppComponent  {
 
   debugItem(item: string): void{
     console.log(item);
+  }
+
+  selectedLink(itemSelected:string):void{
+    this.navbarSelectedOption = itemSelected;
+    this.selectedOptionStyleStatus(itemSelected);
   }
 }

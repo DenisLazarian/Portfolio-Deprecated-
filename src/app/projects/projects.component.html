@@ -14,8 +14,8 @@
             <hr>
 
             <div class="input-group">
-                <span class="input-group-text   bg bg-dark" id="basic-addon1" ><i class=" bi bi-search text-white"></i></span>
-                <input (input)="searchProject()" id="search" type="text" class="form-control  text-white" placeholder="Busqueda por etiquetas: PHP, Javascript..." style="background-color: #2d3951;">
+                <label for="search" class="input-group-text border-0   icon-search" id="basic-addon1" ><i class=" bi bi-search text-white"></i></label>
+                <input (input)="searchProject()" id="search" type="text" class="form-control border-0  text-white" placeholder="Busqueda por etiquetas: PHP, Javascript..." style="background-color: #2d3951;">
             </div>
 
             
@@ -24,7 +24,7 @@
                     <div *ngFor="let project of projectsSearched; let i = index">
                         <div class="card container-personalized " style="width: 15rem;">
                             <div class="img-card position-relative">
-                                <img src={{project.image}} class="card-img-top img-fluid" class="imagen" alt="...">
+                                <img src={{project.image}} class="card-img-top img-fluid imagen"  alt="...">
                                 <div class="action">
                                     <div *ngIf="project.url_host != '#'">
                                         <a href={{project.url_host}} class="select-button-options  " title="Abrir en web"><i class="bi bi-database-fill"></i></a>

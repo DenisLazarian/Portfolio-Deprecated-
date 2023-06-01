@@ -69,10 +69,12 @@ export class ProjectsComponent implements OnInit {
     // }
   }
 
+  
+
   projects:any = [
     {
       title: "Daw.ly",
-      description: "Se trata de un sistema gestor de links similar a la plataforma web 'bitly', el cual permite acortar links y compartirlos en las redes sociales. El sistema permite gestionar los links acortados, ademas de poder ver las visitas a ese link seleccionando un rango de dias. Para los usuarios con rol administrador, incluie tambien una seccion de administracion de usuarios, donde se puede ver los usuarios registrados, editarlos, eliminarlos y crear nuevos usuarios.",
+      description: "Se trata de un sistema gestor de links similar a la plataforma web 'bitly', el cual permite acortar links y compartirlos en las redes sociales. El sistema permite gestionar los links acortados, además de poder ver las visitas a ese link seleccionando un rango de días. Para los usuarios con rol administrador, incluye también una sección de administración de usuarios, donde se puede ver los usuarios registrados, editarlos, eliminarlos y crear nuevos usuarios.",
       image: "assets/img/src-img/dawli.JPG",
       url_host: "#",
       url_github: "https://github.com/DenisLazarian/CI4-daw.li",
@@ -81,14 +83,13 @@ export class ProjectsComponent implements OnInit {
       ]
     },
     {
-      title: "Proyecto 1",
-      description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate at atque natus reprehenderit eaque molestias excepturi cum necessitatibus modi, iure magni dicta nihil itaque? Sit nemo architecto deleniti optio dicta!
-      Natus labore, odio vitae  temporibus, nulla quasi repellendus velit veritatis eum in exercitationem, saepe hic voluptate! Natus omnis quod iusto commodi qui veritatis magni porro consequuntur earum corporis!`,
-      image: "assets/img/notFoundImage.png",
+      title: "CI4-News",
+      description: `Se trata de un gestor de noticias simple donde se pueden generar, editar, eliminar y visualizar noticias. El sistema también dispone de un gestor de usuarios en los cuales se incluye la asignación de roles, los cuales son: Administrador, Editor y Usuario. El sistema también dispone de un sistema de login y registro de usuarios, y algunas de sus funciones están restringidas para usuarios no registrados o usuarios con rol de específico.`,
+      image: "assets/img/src-img/ci-news.JPG",
       url_host: "#",
-      url_github: "#",
+      url_github: "https://github.com/DenisLazarian/ci4-news",
       lang_tags:[
-        "Java","JavaScript","HTML","CSS","MySQL","API REST"
+        "PHP", "Codeigniter 4", "MySQL", "HTML", "Bootstrap 5"
       ]
     },
     {
