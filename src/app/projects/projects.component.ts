@@ -3,8 +3,9 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.css']
+  styleUrls: ['./projects.component.css'] 
 })
+
 export class ProjectsComponent implements OnInit {
 
   ngOnInit(): void {
@@ -12,21 +13,7 @@ export class ProjectsComponent implements OnInit {
   }
   constructor() { }
 
-  // ngAfterContentInit(): void {
-  //   this._router.events.subscribe(
-  //     (event: any) => {
-  //         if(event instanceof NavigationEnd ) {
-  //           this.enlargeMainScreen();
-
-  //         }
-  //     }
-  //   );
-  // }
-
-
   projectsSearched: any = [];
-  
-
   projectFinded:boolean = false;
 
   searchProject(){
@@ -57,16 +44,10 @@ export class ProjectsComponent implements OnInit {
     let footerScreen = document.getElementById('foot')?.offsetHeight;
     let headScreen = document.getElementById('head')?.offsetHeight;
 
-    console.log(heightScreen+" "+ headScreen+" " +mainScreen+" "+footerScreen);
 
     let sumaContent = (headScreen || 0) + (mainScreen || 0) +( footerScreen || 0);
 
-    let tag = document.getElementById('main') ;
-
-    // if(heightScreen > sumaContent && tag != null){
-    //   console.log( ((mainScreen || 0)+((heightScreen || 0) - (sumaContent ||0)) ) + "");
-    //   tag.style.height = ((mainScreen || 0)+((heightScreen || 0) - (sumaContent ||0)) ) + "px";
-    // }
+    let tag = document.getElementById('main');
   }
 
   
@@ -92,36 +73,36 @@ export class ProjectsComponent implements OnInit {
         "PHP", "Codeigniter 4", "MySQL", "HTML", "Bootstrap 5"
       ]
     },
-    {
-      title: "Proyecto 2",
-      description: `Lorem ipsum dolor si veritatis eum in exercitationem, saepe hic voluptate! Natus omnis quod iusto commodi qui veritatis magni porro consequuntur earum corporis!`,
-      image: "assets/img/notFoundImage.png",
-      url_host: "#",
-      url_github: "#",
-      lang_tags:[
-        "Spring Boot","JavaScript","HTML","CSS","MySQL","API REST"
-      ]
-    },
-    {
-      title: "Proyecto 3",
-      description: `Lorem ipsum dolor si veritatis eum in exercitationem, saepe hic voluptate! Natus omnis quod iusto commodi qui veritatis magni porro consequuntur earum corporis!`,
-      image: "assets/img/notFoundImage.png",
-      url_host: "#",
-      url_github: "#",
-      lang_tags:[
-        "Java","JavaScript","HTML","CSS","API REST"
-      ]
-    },
     // {
-    //   title: "Ahorcado simple",
-    //   description: `Juego del ahorcado simple, con un diccionario de palabras en un archivo de texto, i sus correspondientes funcionalidades a los aciertos o fallos de caracteres segun la palabra seleccionada aleatoriamente. No dispone de limite de fallos, pero si de tiempo, el cual es de 45 segundos. El juego al finalizar la partida se muestra el tiempo que ha tardado en finalizarla, y la palabra que se tenia que adivinar`,
-    //   image: "assets/img/src-img/ahorcado_simple.JPG", 
+    //   title: "Proyecto 2",
+    //   description: `Lorem ipsum dolor si veritatis eum in exercitationem, saepe hic voluptate! Natus omnis quod iusto commodi qui veritatis magni porro consequuntur earum corporis!`,
+    //   image: "assets/img/notFoundImage.png",
     //   url_host: "#",
-    //   url_github: "https://github.com/DenisLazarian/Ahorcado_simple",
+    //   url_github: "#",
     //   lang_tags:[
-    //     "JavaScript","HTML","CSS"
+    //     "Spring Boot","JavaScript","HTML","CSS","MySQL","API REST"
     //   ]
-    // }
+    // },
+    // {
+    //   title: "Proyecto 3",
+    //   description: `Lorem ipsum dolor si veritatis eum in exercitationem, saepe hic voluptate! Natus omnis quod iusto commodi qui veritatis magni porro consequuntur earum corporis!`,
+    //   image: "assets/img/notFoundImage.png",
+    //   url_host: "#",
+    //   url_github: "#",
+    //   lang_tags:[
+    //     "Java","JavaScript","HTML","CSS","API REST"
+    //   ]
+    // },
+    {
+      title: "Ahorcado simple",
+      description: `Juego del ahorcado simple, con un diccionario de palabras en un archivo de texto, i sus correspondientes funcionalidades a los aciertos o fallos de caracteres segun la palabra seleccionada aleatoriamente. No dispone de limite de fallos, pero si de tiempo, el cual es de 45 segundos. El juego al finalizar la partida se muestra el tiempo que ha tardado en finalizarla, y la palabra que se tenia que adivinar`,
+      image: "assets/img/src-img/ahorcado_simple.JPG", 
+      url_host: "#",
+      url_github: "https://github.com/DenisLazarian/Ahorcado_simple",
+      lang_tags:[
+        "JavaScript","HTML","CSS"
+      ]
+    }
     
   ]
 
